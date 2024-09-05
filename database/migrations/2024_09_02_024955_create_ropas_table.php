@@ -13,9 +13,9 @@ return new class extends Migration
     {
         Schema::create('ropas', function (Blueprint $table) {
             $table->id();
-            $table->string('codigobarra')->unique();
+            $table->string('codigoBarra')->unique();
             $table->string('nombre');
-            $table->string('Marca');
+            $table->string('marca');
             $table->enum('talla', ['XS', 'S', 'M', 'L', 'XL']);
             $table->enum('color', ['Rojo', 'Azul', 'Verde', 'Amarillo', 'Blanco', 'Rosado', 'Multicolor', 'Otro']);
             $table->integer('precio');

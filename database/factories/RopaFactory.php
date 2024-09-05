@@ -41,11 +41,11 @@ class RopaFactory extends Factory
         ];
         return [
             //
-            'codigobarra' => $this->faker->unique()->ean13(),
+            'codigoBarra' => $this->faker->unique()->ean13(),
             'nombre' => $this->faker->randomElement($clothes),
-            'Marca' => $this->faker->word(),
+            'marca' => $this->faker->word(),
             'talla' => $this->faker->randomElement(['XS', 'S', 'M', 'L', 'XL']),
-            'color' => $this->faker->randomElement(['Rojo', 'Azul', 'Verde', 'Amarillo', 'Blanco', 'Rosado', 'Multicolor', 'Otro']),
+            'color' => $this->faker->randomElement(['Rojo', 'Azul', 'Verde', 'Amarillo', 'Blanco', 'Rosado', 'Multicolor', 'otro']),
             'precio' => $this->faker->numberBetween(100, 9000),
 
         ];
